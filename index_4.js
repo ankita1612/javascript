@@ -1,7 +1,7 @@
 //done// 11. Write a JavaScript program to find the maximum number in an array.
 //done// 12. Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers.
-//hard//done// 13.write a program that seprate nmber and string and remove duplicate
-//hard 14. Implement a javascript function that flattens a nested array into a single-dimensional array.
+//not done hard//done// 13.write a program that seprate nmber and string and remove duplicate
+//not done hard 14. Implement a javascript function that flattens a nested array into a single-dimensional array.
 //done// 15. Write a JavaScript function that returns the Fibonacci sequence up to a given number of terms.
 
 flatternArr()
