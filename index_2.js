@@ -2,29 +2,56 @@
 // 2. How to check whether a string is palindrome or not ?
 // 3. Write a program to remove duplicates from an array ?
 // 4. Program to find Reverse of a string without using built-in method ?
-// 5. Find the max count of consecutive 1’s in an array ? [1,0,1,1,1,1,5,7,8,11,3,1,1,1,7,6,5,1,1,0,1,0] //op : 4
+// 5. Find the max count of consecutive 1’s in an array ? [1,0,1,1,1,1,5,7,8,11,3,1,1,1,7,6,5,1,1,0,1,0] //op : 6
 longestWordWithReducer()
 longestWord()
 removeDuplicateFromArray();
 largestRepeatingSubstring("thisisemptybasketandemptybyibasketyme")
 reverseStr()
-function longestWordWithReducer(){
-
-    const str="I am writing online code"
-    let longest_size=0;
-	let longest_word='';
-
-	str.split(' ').forEach((s) => {
-		if(s.length > longest_size)
-		{
-			longest_size =s.length 
-			longest_word = s;
-		}
-	})
-    console.log(longest_size +  " "+longest_word)
+concuurent()
+{
+    const arr =[1,0,1,1,1,1,5,7,8,11,3,1,1,1,7,6,5,1,1,0,1,0]
+    const nums=arr.reduce((a,i)=>{
+        if(i==1)    
+        {
+            console.log("==>"+a.prev)
+            if(i==a.prev)   
+            {
+                a.count++
+            }
+        }
+        a.prev=i        
+        return a;
+    },{'prev':'',count:0})
+    console.log(nums)
 }
+function palindrome()
+{
+    const num =123321
+str= num.toString()
+console.log(str)
+let new_str=''
+for(let i=str.length-1;i>=0;i--)
+{
+    new_str= new_str +str[i]
+}
+if(new_str== str)
+    console.log("same")
+else
+    console.log("not same")
+}
+function longestWordWithReducer(){   
+    let arr =['a','abcd','abc','ab']
 
-
+    max_len = arr.reduce((a,i)=>{
+        
+        if(a.length < i.length){
+            a=i;
+        }        
+        return a;
+    },arr[0])
+    console.log(max_len)
+}
 
 function removeDuplicateFromArray(){
 

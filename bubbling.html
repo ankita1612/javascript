@@ -1,0 +1,19 @@
+<html>
+
+<body>
+    <div id="parent" style="border:1px sold red;"  onclick="callParent()">This is parent<br>
+        <div id="child" onclick="callChild()">This is Child<br></div>
+    </div>
+</body>
+</html>
+<script>
+    function callParent()
+    {
+        console.log("parent call")
+    }
+    function callChild()
+    {
+        console.log("child call")
+    }
+
+</script>

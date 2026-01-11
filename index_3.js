@@ -2,7 +2,7 @@
 //done// 7. Given 2 arrays that are sorted [0,3,4,31] and [4,6,30]. Merge them and sort [0,3,4,4,6,30,31] ?
 //hard// 8. Create a function which will accepts two arrays arr1 and arr2. 
 // The function should return true if every value in arr1 has its corresponding value squared in array2. The frequency of values must be same.
-//hard// 9. Given two strings. Find if one string can be formed //str1 = "apple" str2 = "pleap" //true
+//hard// 9. Given two strings. Find Anagram : one string can be formed //str1 = "apple" str2 = "pleap" //true
 // 10. Write a JavaScript function to check if a given number is prime.
 
 // console.log(Array.from({ length: 10 }, (_, i) => i + 1)); //Need to do
@@ -66,10 +66,10 @@ function formedString()
     console.log("Same" + is_same)
 }
 
-//sameSquade2()
+sameSquade2()
 function sameSquade2(){
-    const arr1=[1,3,2,4,2,4]
-    const arr2=[1,4,4,9,16,16]
+    const arr1=[1,3,2,4,2,4,5]
+    const arr2=[1,4,4,9,16,16,25]
 
     var new_arr1=[]
     var new_arr2=[]
