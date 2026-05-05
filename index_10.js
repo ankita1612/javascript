@@ -1,4 +1,4 @@
-//4. Find the First Non-Repeating Character
+//4.[hard] Find the First Non-Repeating Character
 //5. find first repreating  char
  //Reverse Words in a Sentence
  //21. Check if a String Contains Only Digits
@@ -7,7 +7,7 @@
 //word with first lettmer
 // 22. const users = [
 //   { id: 1, name: "Amisha" },
-//   { id: 2, name: "Riya" }
+//   { id: 2, name: "Riya" },
 //   { id: 3, name: "mira" }
 // ];
 // reutrn true is name is amita
@@ -150,4 +150,19 @@ function groupbyData()
     }
     ,[])
     console.log(new_data)
+}
+
+function isLetter(){
+ const str="33333"
+ const arr =str.split("").every((s)=>{
+     
+    const n=Number(s)
+    if(!(n>=0 && n<=9) || n==NaN){
+         return false
+    }
+    else
+      return true
+ })
+ 
+ console.log(arr)
 }

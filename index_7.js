@@ -1,7 +1,7 @@
 //hard done 26. Flatten a nested array.
 //done 27 .Count occurrences of elements in an array.
 //done 28 Merge two arrays and remove duplicates.
-//Done 29 Find all unique characters in a string.
+//Good one //Done 29 Find all unique characters in a string.
 //Done 30 Check if two strings are anagrams.
 var flat_arr=[];
 const flatArray = (arr) =>{
